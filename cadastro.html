@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRE-SE</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <H1>TÍTULO DA ONG</H1>
+        <p>Ajudando desde 1989 a inserir o jovem periférico ao mercado de trabalho.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="projetos-sociais.html" target="_self">Projetos Sociais</a></li>
+                <li><a href="cadastro.html" target="_self">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Seja um Voluntário</h2>
+        <!--imagem grande convidando-->
+        <ol>
+            <li>Voluntário III</li>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquid quod minima ab, placeat amet
+                natus nemo dolores autem, tempore inventore molestiae, laudantium at. Est blanditiis sequi possimus
+                officia perspiciatis.</p>
+            <li>Voluntário II</li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque adipisci similique aspernatur,
+                perferendis ea soluta, incidunt quasi nostrum nisi, sint eveniet doloremque blanditiis error? Illo
+                quo debitis exercitationem voluptates.</p>
+            <li>Voluntário nível I</li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi tenetur labore nesciunt quia
+                consectetur hic tempore animi, maxime, eius nemo accusamus iste error recusandae officia? Vero
+                voluptate consequuntur adipisci?</p>
+
+        </ol>
+        <figure>
+
+            <img src="imagens/voluntariado.cadastro.jpg" alt="voluntariados sorrindo para foto"
+                style="max-width: 30%; height: auto;">
+        </figure>
+        <!--imagem a ser alterada-->
+        <form action="" autocomplete="on">
+
+
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="dado">Informe seu nome completo:</label>
+                    <input type="text" name="dado" id="nome" required autocomplete="on" />
+                </p>
+                <p>
+                    <label for="email">Insira seu email:</label>
+                    <input type="email" name="dado" id="email" required autocomplete="on"
+                        placeholder="joao@hotmail.com" />
+                </p>
+                <p>
+                    <label for="CPF">Informe seu CPF</label>
+                    <input type="text" name="dado" id="CPF" required autocomplete="off" inputmode="numeric"
+                        placeholder="xxx.xxx.xxx-xx" pattern="^\d{3}.\d{3}\.\d{3}-\d{2}$" />
+                </p>
+                <p>
+                    <label for="tel">Insira seu telefone:</label>
+                    <input type="tel" name="tel" id="tel" required autocomplete="on" placeholder="(xx)99999-9999"
+                        pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+                </p>
+                <p>
+                    <label for="nasc">Informe sua data de nascimento</label>
+                    <input type="date" name="date" id="nasc" required>
+                </p>
+
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <p>
+                    <label for="cep">CEP:</label>
+                    <input type="text" name="cep" id="cep" required placeholder="99999-999" pattern="\d{8}"
+                        inputmode="numeric">
+                </p>
+
+                <p>
+                    <label for="rua">Rua:</label>
+                    <input type="text" name="rua" id="rua" required>
+                </p>
+
+                <p>
+                    <label for="numero">Número:</label>
+                    <input type="number" name="numero" id="numero" required min="1">
+                </p>
+
+                <p>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" required>
+                </p>
+
+                <p>
+                    <label for="estado">Estado:</label>
+                    <select name="estado" id="estado" required>
+
+                        <option value="">-- Selecione o Estado --</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+
+
+                    </select>
+                </p>
+
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+
+    </main>
+    <footer>
+        <h2>Contato:</h2>
+        <address>
+            <p>Rua Bernando Campos, 1232</p>
+            <p>Telefone: (86) 3223-5414</p>
+            <p>Email: nossaong@ong.com.br</p>
+        </address>
+    </footer>
+</body>
+
+</html>
