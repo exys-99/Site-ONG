@@ -6,40 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossos Projetos</title>
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <H1>TÍTULO DA ONG</H1>
-        <p>Ajudando desde 1989 a inserir o jovem periférico ao mercado de trabalho.</p>
-        <nav>
-            <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="projetos-sociais.html" target="_self">Projetos Sociais</a></li>
-                <li><a href="cadastro.html" target="_self">Cadastre-se</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="branding">
+                <h1>Juntos Somos +</h1>
+                <p>Ajudando desde 1989 a inserir o jovem periférico ao mercado de trabalho.</p>
+            </div>
+
+            <div class="header-actions">
+                <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu">
+                    ☰
+                </button>
+
+                <nav id="main-nav" class="main-nav" role="navigation">
+                    <ul>
+                        <li><a href="index.html" target="_self">Home</a></li>
+                        <li class="has-submenu" aria-haspopup="true" aria-expanded="false">
+                            <a href="projetos-sociais.html" target="_self">Projetos Sociais ▾</a>
+                            <ul class="submenu" aria-label="submenu projetos">
+                                <li><a href="#">Inclusão Digital</a></li>
+                                <li><a href="#">Cursos Profissionalizantes</a></li>
+                                <li><a href="#">Transparência</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="cadastro.html" target="_self">Cadastre-se</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <main>
+    <main class="container page-projetos">
         <h1>Nossos Projetos e Como Ajudar:</h1>
         <section>
             <h2>Projetos Atuais</h2>
-            <div>
-                <article>
+            <div class="projects">
+                <article class="project">
                     <h3>Inclusão Digital</h3>
-                    <img src="imagens/informatica.jpg" alt="jovens em aula de informática" style="max-width: 350px; height: auto;">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam rem ratione vero, in
-                        perferendis atque reprehenderit maxime earum hic repellat vel dolores aperiam provident eligendi
-                        ea ipsam ab voluptate.</p>
-                    <a href="#">Ver detalhes do projeto e doação</a>
-                    <h3>Vagas abertas</h4>
-                    <img src="imagens/voluntário.jpg" alt="jovem com camisa de voluntário">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem ex blanditiis exercitationem
-                        pariatur, placeat repellendus tempora earum officiis repudiandae temporibus quasi minima neque
-                        excepturi ducimus ea veritatis! Non, vel magni.</p>
-                    <a href="#">Acesse nossas vagas e/ou cadastre sua empresa conosco.</a>
+                    <img src="imagens/informatica.jpg" alt="jovens em aula de informática" loading="lazy">
+                    <p>Temos oficina de informática, aberta todas as terças, quintas e sábados, com aulas gratuitas aberta a comunidade para inclusão digital de jovens e adultos.</p>
+                    <a class="project-link" href="#">Ver detalhes do projeto e doação</a>
                 </article>
 
+                <article class="project">
+                    <h3>Portas Abertas</h3>
+                    <img src="imagens/imagem.voluntariado.jpeg" alt="jovem com camisa de voluntário" loading="lazy">
+                    <p>Programa de encaminhamento dos nossos jovens e adultos ao mercado de trabalho através das empresas que fazem parte do nosso projeto.</p>
+                    <a class="project-link" href="#">Acesse nossas vagas e/ou cadastre sua empresa conosco.</a>
+                </article>
             </div>
         </section>
         <section>
@@ -59,9 +76,10 @@
         <address>
             <p>Rua Bernando Campos, 1232</p>
             <p>Telefone: (86) 3223-5414</p>
-            <p>Email: </p>
+            <p>Email: nossaong@ong.com.br </p>
         </address>
     </footer>
+    <script src="scripts/main.js" defer></script>
 </body>
 
 </html>

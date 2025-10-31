@@ -6,42 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CADASTRE-SE</title>
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <H1>TÍTULO DA ONG</H1>
-        <p>Ajudando desde 1989 a inserir o jovem periférico ao mercado de trabalho.</p>
-        <nav>
-            <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="projetos-sociais.html" target="_self">Projetos Sociais</a></li>
-                <li><a href="cadastro.html" target="_self">Cadastre-se</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Seja um Voluntário</h2>
-        <!--imagem grande convidando-->
-        <ol>
-            <li>Voluntário III</li>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aliquid quod minima ab, placeat amet
-                natus nemo dolores autem, tempore inventore molestiae, laudantium at. Est blanditiis sequi possimus
-                officia perspiciatis.</p>
-            <li>Voluntário II</li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque adipisci similique aspernatur,
-                perferendis ea soluta, incidunt quasi nostrum nisi, sint eveniet doloremque blanditiis error? Illo
-                quo debitis exercitationem voluptates.</p>
-            <li>Voluntário nível I</li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi tenetur labore nesciunt quia
-                consectetur hic tempore animi, maxime, eius nemo accusamus iste error recusandae officia? Vero
-                voluptate consequuntur adipisci?</p>
+        <div class="container">
+            <div class="branding">
+                <h1>Juntos Somos +</h1>
+                <p>Ajudando desde 1989 a inserir o jovem periférico ao mercado de trabalho.</p>
+            </div>
 
+            <div class="header-actions">
+                <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu">
+                    ☰
+                </button>
+
+                <nav id="main-nav" class="main-nav" role="navigation">
+                    <ul>
+                        <li><a href="index.html" target="_self">Home</a></li>
+                        <li class="has-submenu" aria-haspopup="true" aria-expanded="false">
+                            <a href="projetos-sociais.html" target="_self">Projetos Sociais ▾</a>
+                            <ul class="submenu" aria-label="submenu projetos">
+                                <li><a href="#">Inclusão Digital</a></li>
+                                <li><a href="#">Cursos Profissionalizantes</a></li>
+                                <li><a href="#">Transparência</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="cadastro.html" target="_self">Cadastre-se</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <h2>Seja um Voluntário</h2>
+        <ol class="volunteer-list">
+            <li class="vol-level" aria-labelledby="vol-iii">
+                <h3 id="vol-iii">Voluntário III</h3>
+                <p class="vol-desc">Nesse nível o voluntário irá atuar em atividades de liderança e coordenação, como planejamento de eventos e gestão de equipes.</p>
+            </li>
+            <li class="vol-level" aria-labelledby="vol-ii">
+                <h3 id="vol-ii">Voluntário II</h3>
+                <p class="vol-desc">Nesse nível o voluntário irá atuar em atividades de apoio e supervisão, como organização de materiais e auxílio na logística de eventos.</p>
+            </li>
+            <li class="vol-level" aria-labelledby="vol-i">
+                <h3 id="vol-i">Voluntário I</h3>
+                <p class="vol-desc">Nesse nível o voluntário irá atuar diretamente nas atividades da ONG, auxiliando na organização de eventos e no acompanhamento dos projetos sociais.</p>
+            </li>
         </ol>
         <figure>
 
-            <img src="imagens/voluntariado.cadastro.jpg" alt="voluntariados sorrindo para foto"
-                style="max-width: 30%; height: auto;">
+            <img src="imagens/voluntariado.cadastro.jpg" alt="voluntariados sorrindo para foto" loading="lazy">
         </figure>
         <!--imagem a ser alterada-->
         <form action="" autocomplete="on">
@@ -151,6 +167,7 @@
             <p>Email: nossaong@ong.com.br</p>
         </address>
     </footer>
+    <script src="scripts/main.js" defer></script>
 </body>
 
 </html>
